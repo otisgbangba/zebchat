@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtm11/DTD/xhtm11-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Colored Lists <!-- Do something smart Here --></title>
+    link rel="stylesheet" href="style.css" type="text/css"/>
+    link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+    script type='text/javascript'
+src='//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+</head>
+<body>
+
+    <div id="page-wrap">
+
+        <div id="header">
+        
+            <h1><a href="/">ZEBCHAT</a></h1>
+
+            <div id="control">
+<!-- IF LOGGED IN -->
+                 <p><a href="/logout.zebby" class="button">Log out</a><a
+href="/account.zebby" class="button ">Your Account</a></p>
+
+<!-- IF LOGGED OUT -->
+                 <p><a class="button" href="/signup.zebby">Sign up</a> &nbsp; <a
+class="button" href="/login.zebby">Log in</a></p>
+<!-- END OF IF STATEMENT -->
+
+            </div>
+
+        </div>
+
+        </div>
+<div id="ribbon">
+
+    Reminders 
+
+    <ul>
+         <li>Your list automatically saves</li>
+         <li>Double-click list items to edit them</li>
+    </ul>
+</div>
+
+</div>
+<?zebby include_once "common/header.zebby"; ?>
+<div id="main">
+    <noscript>This site dosent just work,period,without Javascript</noscript>
+    <!--!IF LOGGED IN -->
+    
+          <!--Content here-->
+
+    <!--IF LOGGED OUT-->
+          <!--Alternate content here-->
+</div>
+<?zebby include_once "common/sidebar.zebby"; ?>
+<?zebby include_once "common/footer.zebby"; ?>
+<ul id="list">
+    <li class="color red">
+        <span> Walk the dog</span>
+        <div class="draggertab tag"></div>
+        <div class="colortab tab"></div>
+        <div class="deletetab tab"></div>
+        <div class="donetab tab"></div>
+    </li>
+
+    <li class="colorBlue">
+        <span> pick up drycleaning</span>
+        <div class="draggertab tag"></div>
+        <div class="colortab tab"></div>
+        <div class="deletetab tab"></div>
+        <div class="donetab tab"></div>
+    </li>
+    <li class="color Green">hffffvvfvgggf  f 
+        <div class="colortab tab"></div>
+        <div class="deletetab tab"></div>
+        <div class="donetab tab"></div>
+    </li>
+</ul>
+<form action="" id="add-new">
+
+    <div>
+        <input type="text" id="new-list-item-text" name="new-list-item-text"/>
+        <input type="submit" id="add-new-submit" value="Add" class="button"/>
+    </div>
+</form>        
+<div id="share-area">
+    <p>Public list URL: <a href="#">URL GOES HERE</a>
+    <small>(Nobody but YOU will be able to edit this list)</small></p>
+<h2>Your Account</h2>
+
+<form action="">
+    <div>
+        <input type="text" name="username" id="username"/>
+        <label for=username>Change Email Address </label>
+
+        <input type="submit" name="change-email-submit" id="change-email-submit" value="Change Email" class="button"/>
+
+    </div>
+</form>
+<hr />
+
+<h2>Change Password</h2>
+
+<form action="#">
+    <div>
+        <label for="password">New Password</label>
+        <input type="submit" name="r" id="repeat-new-password"/>
+
+        <label for="password">New Password</label>
+        <input type="submit" name="Change-password-submit" id="Change-password-submit" value="Change Password" class="button"/>
+
+    </div>
+</form>
+
+<hr />
+
+<form action="" id=delete-account-from"></form>
+    <div>
+        <input type="submit" name="delete-account-submit" id="delete-account-submit" value="Delete Account?" class="button"/>
+    </div>
+</form>
+
+</body>
+</html>
